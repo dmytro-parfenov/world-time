@@ -4,10 +4,10 @@
 
 - To create a web component you should define it in `the app.module.ts`. 
 An example provided in the constructor of `AppModule`.
-- `elemets.js` is used to concatenate all scripts into single file and move 
+- `web-component.js` file is used to concatenate all scripts into single file and move 
 it to the separate folder whit styles.
-- To build a web component you should use script `build:production:elements` 
-from `packaje.json` file. It will create new folder `dist/elements/world-time` 
+- To build a web component you should use script `build:production:web-component` 
+from `packaje.json` file. It will create new folder `dist/web-component/world-time` 
 with the web component, which will include two files `world-time.css` and 
 `world-time.js`.
 

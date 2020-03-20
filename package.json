@@ -7,11 +7,11 @@
     "build": "ng build",
     "build:production": "ng run world-time:build:production",
     "build:production:none-hashing": "ng run world-time:build:production --output-hashing none",
-    "build:production:elements": "npm run build:production:none-hashing && npm run concatenate:elements",
+    "build:production:web-component": "npm run build:production:none-hashing && npm run concatenate:web-component",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "concatenate:elements": "node elements.js"
+    "concatenate:web-component": "node web-component.js"
   },
   "private": true,
   "dependencies": {
