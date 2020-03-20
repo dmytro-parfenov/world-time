@@ -1,0 +1,19 @@
+<div class="timezone">
+  <mat-form-field>
+    <mat-label>Timezone</mat-label>
+    <mat-select [formControl]="timezone">
+      <mat-option *ngFor="let timezone of timezones" [value]="timezone">
+        {{timezone}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<ng-container [ngSwitch]="hasError">
+  <div *ngSwitchCase="true" class="error">
+    <div class="message">Something went wrong</div>
+    <div class="action"><mat-icon aria-hidden="false" aria-label="refresh" (click)="refresh()">refresh</mat-icon></div>
+  </div>
+
+  <div *ngSwitchCase="false" class="time">{{time}}</div>
+</ng-container>

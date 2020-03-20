@@ -1,0 +1,41 @@
+:host {
+  display: inline-grid;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(17,34,51,.2);
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.timezone {
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fade-in 0.2s ease-in;
+
+  .message {
+    color: #f44336;
+  }
+
+  .action {
+    mat-icon {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
